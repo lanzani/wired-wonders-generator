@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+
+header {visibility: hidden;}  /* Hide streamlit hamburger menu */
+footer {visibility: hidden;}  /* Hide streamlit footer */
+
+.block-container {
+    padding-top: 0px;
+}  /* Remove streamlit header space */
+
+.css-1544g2n.e1fqkh3o4 {
+      padding-top: 20px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+p, small {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400 !important;
+}
+
+
+.css-lrlib.e1akgbir9 {
+    padding-top: 30px !important;
+}

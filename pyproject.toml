@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "wired-wonders-generator"
+version = "0.1.0"
+description = ""
+authors = ["Federico Lanzani <federico.lanzani@outlook.com>"]
+readme = "README.md"
+packages = [{include = "wired_wonders_generator"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.9.7"
+streamlit = "^1.23.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
