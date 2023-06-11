@@ -73,11 +73,13 @@ def render():
     # Get turtle canvas and convert it into an image
     pil_image = turtle_to_pil()
 
+
     # Save the image
-    # pil_image.save("tiling.png")
+    pil_image.save("tiling.png")
 
 
-    exitonclick()
+    # exitonclick()
+
 
     return pil_image
 

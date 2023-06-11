@@ -1,3 +1,5 @@
+import multiprocessing
+
 import streamlit as st
 
 st.set_page_config(
@@ -14,9 +16,13 @@ def get_settings():
     pass
 
 def get_canvas():
+
+
+
     return render()
 
 def app():
+    t = multiprocessing.Process(target=get_canvas)
 
     st.title("Tile Patterns")
     st.divider()
@@ -25,13 +31,14 @@ def app():
 
 
     with settings_col:
+        st.write("Settings")
         get_settings()
 
-    img = get_canvas()
+    t.start()
 
     with canvas_col:
 
-        st.image(img)
+        st.image("tiling.png", use_column_width=True)
 
 
 def main():
