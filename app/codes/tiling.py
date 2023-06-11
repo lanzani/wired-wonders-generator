@@ -60,26 +60,24 @@ def turtle_to_pil():
 
 
 def render():
-    try:
-        hideturtle()
 
-        setup(1000, 1000)
-        tracer(False)
+    hideturtle()
 
-        width(3)
-        tiling(0, 0, 400, 3, "diagonal")
+    setup(1000, 1000)
+    tracer(False)
 
-        tracer(True)
+    width(3)
+    tiling(0, 0, 400, 3, "diagonal")
 
-
-        # Get turtle canvas and convert it into an image
-        pil_image = turtle_to_pil()
+    tracer(True)
 
 
-        # Save the image
-        pil_image.save("tiling.png")
-    except Exception as e:
-        print(e)
+    # Get turtle canvas and convert it into an image
+    pil_image = turtle_to_pil()
+
+
+    # Save the image
+    pil_image.save("tiling.png")
 
 
     # exitonclick()
