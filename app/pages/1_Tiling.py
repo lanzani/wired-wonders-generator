@@ -8,8 +8,6 @@ st.set_page_config(
     layout="wide",
 )
 
-import os
-os.environ['DISPLAY'] = '0.0'
 
 from streamlit_utils import load_css
 from codes.tiling import render
