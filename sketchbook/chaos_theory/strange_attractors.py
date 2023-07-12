@@ -45,3 +45,6 @@ while not found:
 
 plt.scatter(x_path, y_path, s=0.1)
 plt.show()
+
+plt.plot(x_path, y_path, "-o", linewidth=1, markersize=1)
+plt.show()
