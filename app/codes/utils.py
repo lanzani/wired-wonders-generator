@@ -4,7 +4,7 @@ import io
 
 
 def turtle_to_pil():
-    """Convert turtle canvas to PIL image"""
+    """Convert turtle sketchbook to PIL image"""
     ps = turtle.getscreen().getcanvas().postscript()
     return Image.open(io.BytesIO(ps.encode('utf-8')))
 

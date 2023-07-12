@@ -54,7 +54,7 @@ def tiling(x, y, size, depth, mode="straight"):
 
 
 def turtle_to_pil():
-    """Convert turtle canvas to PIL image"""
+    """Convert turtle sketchbook to PIL image"""
     ps = getscreen().getcanvas().postscript()
     return Image.open(io.BytesIO(ps.encode('utf-8')))
 
@@ -72,7 +72,7 @@ def render():
     tracer(True)
 
 
-    # Get turtle canvas and convert it into an image
+    # Get turtle sketchbook and convert it into an image
     pil_image = turtle_to_pil()
 
 

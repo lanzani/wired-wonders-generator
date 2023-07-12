@@ -26,7 +26,7 @@ def render_image(step_size=40, angle_step=1.00, n_steps=600):
 
     tracer(True)
 
-    # Get turtle canvas and convert it into an image
+    # Get turtle sketchbook and convert it into an image
     pil_image = turtle_to_pil()
 
     # Save the image
