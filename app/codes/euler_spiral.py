@@ -14,7 +14,7 @@ def euler_curve(step_size, angle_step, n_steps):
 
 def render_image(step_size=40, angle_step=1.00, n_steps=600):
 
-    # TODO fare context manager
+    # TODO context manager
     # set_theme(tracer_value=100, hide_turtle=False)
     set_theme()
 
