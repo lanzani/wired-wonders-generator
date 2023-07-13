@@ -10,6 +10,10 @@ packages = [{include = "wired_wonders_generator"}]
 python = ">=3.10.8"
 matplotlib = "^3.7.2"
 streamlit = "^1.24.1"
+opencv-python = "^4.8.0.74"
+torch = "^2.0.1"
+torchvision = "^0.15.2"
+easyocr = "^1.7.0"
 
 
 
