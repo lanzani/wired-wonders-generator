@@ -34,7 +34,7 @@ def search_attractors(attractors_to_save=3):
         converging = False
         lyapunov = 0
 
-        for i in range(10000):
+        for i in range(1000000):
             # Compute next point (using the quadratic map)
             x_new = a[0] + a[1] * x + a[2] * x * x + a[3] * y + a[4] * y * y + a[5] * x * y
             y_new = a[6] + a[7] * x + a[8] * x * x + a[9] * y + a[10] * y * y + a[11] * x * y
@@ -102,4 +102,4 @@ def search_attractors(attractors_to_save=3):
 # plt.plot(x_path, y_path, "-o", linewidth=1, markersize=1)
 # plt.show()
 
-search_attractors(30)
+search_attractors(5)
