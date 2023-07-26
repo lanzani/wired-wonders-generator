@@ -102,4 +102,4 @@ def search_attractors(attractors_to_save=3):
 # plt.plot(x_path, y_path, "-o", linewidth=1, markersize=1)
 # plt.show()
 
-search_attractors(5)
+search_attractors(30)
